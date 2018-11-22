@@ -1,1 +1,2 @@
 AOS.init();
+$('.nav').nav();

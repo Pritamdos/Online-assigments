@@ -342,14 +342,6 @@ li.socials-icons
     margin:10px 0 0 0px!important;
     padding-left: 0px;
 }
-ul.f1-ul li a:hover
-{
-    border:1px solid #fff;
-    -webkit-box-shadow: 0px 7px 28px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 7px 28px -10px rgba(0,0,0,0.75);
-    box-shadow: 0px 7px 28px -10px rgba(0,0,0,0.75);
-    opacity:1;
-}
 ul.list-details {
     margin: 0;
     padding: 0;
@@ -364,4 +356,242 @@ li.contact-details
     width: 100%;
     float: left;
     opacity:0.9;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.nav{
+    display:none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:900;
+    overflow-x:hidden;
+    overflow-y:auto
+}
+.nav-button, .nav-close 
+{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #Fff;
+}
+.nav-button, .nav-close  i.fa.fa-bars {
+    font-size: 28px;
+}
+.nav ul{
+    display:block;
+    position:relative;
+    zoom:1;
+    list-style-type:none;
+    margin:0;
+    padding:0
+}
+.nav a,.nav a:active,.nav a:hover,.nav a:visited{
+    display:block;
+    position:relative
+}
+@media only screen and (min-width:767px){
+    .nav{
+        display:block;
+        position:relative;
+        bottom:auto;
+        overflow:visible
+    }
+    .nav li{
+        position:relative;
+        white-space:nowrap
+    }
+    .nav>ul>li{
+        display:inline-block
+    }
+    .nav ul{
+        display:block
+    }
+    .nav ul ul{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        z-index:901
+    }
+    .nav ul ul ul{
+        top:5px;
+        left:95%;
+        z-index:902
+    }
+    .nav ul ul ul ul{
+        z-index:903
+    }
+    .nav ul ul ul ul ul{
+        z-index:904
+    }
+    .nav ul ul li.nav-left>ul{
+        left:auto;
+        right:95%
+    }
+    .nav-no-js .nav li:hover>ul{
+        display:block
+    }
+}
+@media only screen and (max-width:768px){
+    .nav-no-js .nav-button:hover+.nav,.nav-no-js .nav-button:hover+.nav+.nav-close,.nav-no-js .nav:hover,.nav-no-js .nav:hover+.nav-close{
+        display:block
+    }
+    .nav
+    {
+        top:60px!important;
+        background:#000;
+    }
+  
+}
+.nav-headers
+ {
+    width: 100%;
+    float: left;
+    position: fixed;
+    background:rgba(0.0,0,0.9);
+    height:70px;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+}
+.icon-desktop:before{
+    content:"\E001"
+}
+.icon-menu-close:before{
+    content:"\E002"
+}
+.icon-menu:before{
+    content:"\E003"
+}
+.icon-mobile:before{
+    content:"\E004"
+}
+.icon-submenu-down:before{
+    content:"\E005"
+}
+.icon-submenu-right:before{
+    content:"\E006"
+}
+.icon-world:before{
+    content:"\E007"
+}
+header{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:901;
+    padding-left:10px;
+    line-height:4.4rem;
+    background:#26201C;
+    color:#A69A94
+}
+header h1{
+    margin:0;
+    font-size:1.7rem;
+    line-height:4.4rem
+}
+header h1:before{
+    content:"\E004";
+    margin-right:8px
+}
+
+
+.nav-close{
+    display:none;
+    right:4rem;
+    font-size:1.9rem
+}
+.nav-close:before
+{
+    content:"\E002"
+}
+.nav
+{
+  float: right;
+}
+
+.nav ul ul
+{
+    background:#000;
+}
+.nav ul ul ul{
+    background:#000;
+}
+.nav ul ul ul ul{
+    background:#000;
+}
+.nav ul ul ul ul ul{
+    background:#493e36
+}
+.nav li
+{
+    border-top:1px solid #59544F;
+    cursor:pointer
+}
+.nav li.nav-active>a,.nav li:hover>a
+{
+    
+}
+.nav .nav-submenu>ul{
+    margin-left:10px
+}
+.nav .nav-submenu>a{
+    padding-right:30px!important
+}
+.nav a,.nav a:active,.nav a:hover,.nav a:visited
+{
+  
+    padding:20px;
+    color:#8C827D;
+    text-decoration:none;
+    color:#fff;
+}
+@media only screen and (min-width:767px)
+{
+    body{
+        padding:0!important
+    }
+    header{
+        position:relative
+    }
+    header h1:before
+    {
+        content:"\E001"
+    }
+    .nav-button
+    {
+        display:none
+    }
+    .nav{
+        padding:0!important;
+        
+    }
+    .nav>ul>li{
+        border-top:none
+    }
+    .nav li>ul{
+        box-shadow:0 0 5px 0 rgba(0,0,0,.75)
+    }
+
+    .nav ul ul ul li:first-child{
+        border-top:none
+    }
+    .nav .nav-left>ul{
+        border-radius:6px 0 6px 6px
+    }
+    .nav .nav-submenu li{
+        min-width:110px
+    }
+    .nav .nav-submenu>ul{
+        margin:0
+    }
+  
+  
 }
