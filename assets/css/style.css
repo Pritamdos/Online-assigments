@@ -479,6 +479,10 @@ body{
         height:100%;
         float: left;
         padding: 15px;
+        border-radius: 0 0 0 5px;
+        -webkit-box-shadow: -15px 7px 157px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: -15px 7px 157px -5px rgba(0,0,0,0.75);
+        box-shadow: -15px 7px 157px -5px rgba(0,0,0,0.75);
       }
       .notif-item a{
         color: #ffffff;
@@ -490,7 +494,7 @@ body{
         top: 0;
         bottom: auto;
         right: auto;
-        left: -48px;
+        left: -50px;
         z-index: 1;
         cursor: pointer;
         background-color: #64a841;
