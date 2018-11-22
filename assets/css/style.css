@@ -33,6 +33,7 @@ body
     justify-content: center;
     align-items: center;
     background-position: center;
+    margin-top:70px;
 }
 .onl-inrs-banner-sections:before
 {
