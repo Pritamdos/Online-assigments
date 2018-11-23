@@ -2,7 +2,7 @@ body
 {
     margin:0;
     padding:0;
-    font-family: 'opensans-light';
+    font-family: 'opensans-regular';
     overflow-x: hidden;
 }
 *
@@ -28,7 +28,7 @@ body
     background-attachment: fixed;
     background-size:cover;
     position: relative;
-    height:90vh;
+    height:80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,8 @@ span.on-sub-headers {
     float: left;
     margin:10px 0;
 }
-.each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"] 
+.each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"],.each-rows-inputs input[type="number"],
+.each-rows-inputs input[type="password"],.each-rows-inputs input[type="time"]
 {
     width: 100%;
     float: left;
@@ -488,14 +489,18 @@ body{
 .notif-flex
 {
   width: 400px;
-  height:400px;
+  height:auto;
+  padding:20px 0;
   position: absolute;
   left: 0;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
   background: #fff;
-  box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -7px 2px 59px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -7px 2px 59px 0px rgba(0,0,0,0.75);
+  box-shadow: -7px 2px 59px 0px rgba(0,0,0,0.75);
+  border-radius:0 0 0 5px;
 }
 .notif-flex.off
 {
@@ -530,12 +535,10 @@ body{
   z-index: 1;
   cursor: pointer;
   background-color: #64a841;
-  height:80px;
+  height:100px;
   width: 50px;
   border-radius: 50px 0 0 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding:18px;
 }
 .notif-btn .fa{
   font-size: 15px;
@@ -647,7 +650,7 @@ header h1:before{
     padding:23px;
     text-decoration:none;
     color:#000;
-    font-size:15px;
+    font-size:16px;
     font-weight:500;
 }
 .nav a:hover
@@ -716,6 +719,7 @@ img.logg {
     .nav .nav-submenu li a
     {
         color:#fff;
+        padding:15px!important;
     }
   
   
@@ -779,4 +783,78 @@ a.order-now
     display: inline-block;
     text-align: center;
     color:#fff!important;
+}
+.calls
+{
+    font-size:24px!important;
+}
+
+.call-nows
+{
+    width:100%;
+    float: left;
+    color:#fff;
+    font-size:13px;
+    line-height:18px; 
+}
+.swing 
+{
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+}
+.swing
+{
+  
+    display: block;
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+.notify-haeders-sec 
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    line-height: 22px;
+    color:#64a841;
+
+}
+.date-starts-left,.date-starts-right
+{
+    width:50%;
+    float: left;
+    padding:5px 0 0 5px;
+}
+.each-rows-deadline-sec
+{
+    width:100%;
+    float: left;
+}
+.deadline-text
+{
+    width:100%;
+    float: left;
+    font-size:13px;
+    color:#666;
+    line-height:18px;
+    margin:0;
+    text-align: left;
+    padding-left:6px;
+}
+.date-starts-time
+{
+    width:100%;
+    float: left;
+}
+.each-rows-deadline-time-zone
+{
+    width:100%;
+    float: left;
+    padding:10px 10px;
 }
