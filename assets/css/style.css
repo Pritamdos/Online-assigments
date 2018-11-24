@@ -260,12 +260,7 @@ span.welcome-online-help
     padding: 0;
     font-family: 'Pacifico', cursive;
 }
-.onl-fotter-sections {
-    width: 100%;
-    float: left;
-    height: 280px;
-    background:#373737;
-}
+
 .only-fotter-sectios-left,.only-fotter-sectios-middle,.only-fotter-sectios-right
 {
     width: 33.33%;
@@ -322,7 +317,7 @@ ul.f1-ul li a
 }
 ul.f1-ul li a:hover 
 {
-    opacity:1;
+    background-color:#3b9bb9;
 }
 ul.f1-ul li.ft-list:before 
 {
@@ -748,7 +743,7 @@ img.logg {
 {
     float: left;
     width: 100%;
-    padding:20px 0;
+    padding:60px 0;
     background-color:#f7f7f7;
 }
 .wrapper 
@@ -802,7 +797,17 @@ span.world-abouts
     box-shadow: -1px 2px 60px 1px rgba(0,0,0,.1);
     border-radius: 10px;
     position: relative;
-    height:220px;
+    height:165px;
+}
+.card-inner-section-assignment
+{
+    float: left;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: -1px 2px 60px 1px rgba(0,0,0,.1);
+    box-shadow: -1px 2px 60px 1px rgba(0,0,0,.1);
+    border-radius: 10px;
+    position: relative;
 }
 .work-headers 
 {
@@ -1054,7 +1059,24 @@ span.card-logos
     text-align-last: center;
     position: relative;
   }
-  .inner-test ul li:before
+  .fott-containers
   {
-
-  }
+     width:1366px;
+     margin: 0 auto;
+ 
+ }
+ .onl-fotter-sections
+ {
+     width:100%;
+     float: left;
+     height:280px;
+     background:#373737;
+ }
+ .how-work
+ {
+     background-color:#f2f2f2!important;
+ }
+ @media screen and (max-width:1366px)
+ {
+    .fott-containers{width:100%!important;float:left!important;}
+ }
