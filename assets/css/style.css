@@ -1300,7 +1300,7 @@ span.card-logos
 }
 .card-online-hr
 {
-    padding:0px 30px;
+    padding:15px 30px;
     width:100%;
     float: left;
 }
@@ -1318,6 +1318,7 @@ span.card-logos
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        height: 484px;
 	}
     .lead-tstmnl-slider 
     {
@@ -1378,9 +1379,37 @@ span.card-logos
 		margin: 0px 3px 0px 0px;
 		background-color: #eee;
 		position: relative;
-	}
+    }
+    li.dot 
+    {
+        float: left;
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 9999999;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        float: left;
+        list-style-type: none;
+        background: #ccc;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    ol.flickity-page-dots 
+    {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:30px 0;
+    }
     .lead-tstmnl-slider .slick-dots li.slick-active {background-color:#3b9bb9;height:12px;width:12px;height:12p;}
-
+    .flickity-page-dots .dot.is-selected 
+    {
+        background-color:#3b9bb9;
+    }
 
 @-webkit-keyframes content {
   from {
@@ -1948,6 +1977,7 @@ span.lead-tstmnl-comment-sec
     padding: 20px 0 5px 0;
     line-height: 22px;
     margin: 0;
+    word-wrap: break-word;
 }
 .hr-r 
 {
@@ -1980,8 +2010,6 @@ ul.lead-tstmnl-nm-dsg-rating li
     display: inline-block;
     color:#3b9bb9;
 }
-<<<<<<< HEAD
-=======
 .dashboard-inner-wraper
 {
     width:100%;
@@ -2012,6 +2040,16 @@ ul.lead-tstmnl-nm-dsg-rating li
 {
     background-color:#3b9bb9;
 }
+.main-gallery:focus
+{
+    outline:none!important;
+}
+.nav-order
+{
+    margin-right:10px;
+    float:right;
+}
+
 @media screen and (max-width:767px)
 {
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
@@ -2025,11 +2063,11 @@ ul.lead-tstmnl-nm-dsg-rating li
     .onl-sub-inners-sec{padding:20px!important;}
     .only-sub-inners-right-sections{width:100%!important;float:left!important;}
     .only-sub-inners-right-sections{padding:0!important;}
-    .only-sub-form-sec{padding:20px!important;width:300px!important;}
+    .only-sub-form-sec{padding:20px!important;width:80%!important;}
     .card-outer-work-hire-onlines{padding:0!important;}
     .onl-sub-inners-left-section{display:none!important;}
     .dash-cont-mobile-view {display:block;padding:30px 40px;}
-    .header-sections{padding:20px 0!important;}
+    .header-sections{padding:20px 20px!important;}
     .lg-sub-inners-left-sec{width:100%!important;border:none!important;}
     .lg-sub-inners-right-sec{width:100%!important;}
     .lg-sg-form-se{padding:0 50px!important;}
@@ -2040,6 +2078,7 @@ ul.lead-tstmnl-nm-dsg-rating li
     ul.f1-ul li a,li.contact-details{font-size:13px!important;}
     .only-footer-sub-inners-sec{padding:0!important;}
     a.at-s{height:30px!important;width:30px!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
 } 
 @media screen and (min-width:768px) and (max-width:997px)
 {
@@ -2059,6 +2098,7 @@ ul.lead-tstmnl-nm-dsg-rating li
     .only-sub-form-sec{padding:20px!important;width:600px!important;}
     .lead-tstmnl-comment{padding:10px!important;}
     .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
     
 
 
@@ -2133,8 +2173,5 @@ ul.lead-tstmnl-nm-dsg-rating li
     bottom: 25px;
   }
   
-  .flickity-page-dots .dot.is-selected {
-    background: #7AA641;
-  }
+
   
->>>>>>> 30ec08756cda128a0850f2a5d569eedba6e9cbe9
