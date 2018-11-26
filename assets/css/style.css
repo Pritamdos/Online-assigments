@@ -1020,6 +1020,7 @@ span.card-logos
     color:#fff!important;
     line-height:0;
     display:inline-block!important;
+    animation-iteration-count: infinite;
 }
 .calls
 {
@@ -1191,7 +1192,6 @@ span.card-logos
  {
      width:100%;
      float: left;
-     height:280px;
      background:#373737;
  }
  .how-work
