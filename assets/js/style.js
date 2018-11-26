@@ -10,12 +10,12 @@ $(document).ready(function () {
     $("#slide-down").click(function () {
         $(".notif-item").addClass('hide').addClass('slideInDown');
     });
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        items:1,
-    });
+    // $('.owl-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     responsiveClass: true,
+    //     items: 1,
+    // });
 
     jQuery(function ($) {
 

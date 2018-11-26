@@ -1316,6 +1316,7 @@ span.card-logos
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 	}
     .lead-tstmnl-slider 
     {
@@ -2087,3 +2088,49 @@ ul.lead-tstmnl-nm-dsg-rating li
 {
     .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
 }
+
+.main-gallery 
+{
+
+    width:100%;
+    float: left;
+}
+  
+  .gallery-cell 
+  {
+    width: 100%;
+  }
+  
+  .testimonial
+   {
+    text-align: center;
+    padding: 0 20px;
+    outline:none!important;
+  }
+  
+  .testimonial-avatar {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .testimonial-quote {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0;
+  }
+  
+  .testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #7AA641;
+  }
+  
+  .flickity-page-dots {
+    bottom: 25px;
+  }
+  
+  .flickity-page-dots .dot.is-selected {
+    background: #7AA641;
+  }
+  
