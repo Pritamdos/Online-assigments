@@ -426,7 +426,6 @@ li.contact-details
     z-index:900;
     overflow-x:hidden;
     overflow-y:auto;
-    margin-right: 20px;
 }
 .nav-button, .nav-close 
 {
@@ -1042,6 +1041,7 @@ span.card-logos
     color:#fff!important;
     line-height:0;
     display:inline-block!important;
+    animation-iteration-count: infinite;
 }
 .calls
 {
@@ -1300,7 +1300,7 @@ span.card-logos
 }
 .card-online-hr
 {
-    padding:0px 30px;
+    padding:15px 30px;
     width:100%;
     float: left;
 }
@@ -1317,6 +1317,8 @@ span.card-logos
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        height: 484px;
 	}
     .lead-tstmnl-slider 
     {
@@ -1377,9 +1379,37 @@ span.card-logos
 		margin: 0px 3px 0px 0px;
 		background-color: #eee;
 		position: relative;
-	}
+    }
+    li.dot 
+    {
+        float: left;
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 9999999;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        float: left;
+        list-style-type: none;
+        background: #ccc;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    ol.flickity-page-dots 
+    {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:30px 0;
+    }
     .lead-tstmnl-slider .slick-dots li.slick-active {background-color:#3b9bb9;height:12px;width:12px;height:12p;}
-
+    .flickity-page-dots .dot.is-selected 
+    {
+        background-color:#3b9bb9;
+    }
 
 @-webkit-keyframes content {
   from {
@@ -1947,6 +1977,7 @@ span.lead-tstmnl-comment-sec
     padding: 20px 0 5px 0;
     line-height: 22px;
     margin: 0;
+    word-wrap: break-word;
 }
 .hr-r 
 {
@@ -2009,10 +2040,20 @@ ul.lead-tstmnl-nm-dsg-rating li
 {
     background-color:#3b9bb9;
 }
+.main-gallery:focus
+{
+    outline:none!important;
+}
+.nav-order
+{
+    margin-right:10px;
+    float:right;
+}
+
 @media screen and (max-width:767px)
 {
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
     span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
     .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
     span.welcome-online-help{font-size:22px!important;line-height:32px!important}
@@ -2022,22 +2063,46 @@ ul.lead-tstmnl-nm-dsg-rating li
     .onl-sub-inners-sec{padding:20px!important;}
     .only-sub-inners-right-sections{width:100%!important;float:left!important;}
     .only-sub-inners-right-sections{padding:0!important;}
-    .only-sub-form-sec{padding:20px!important;width:300px!important;}
+    .only-sub-form-sec{padding:20px!important;width:80%!important;}
     .card-outer-work-hire-onlines{padding:0!important;}
     .onl-sub-inners-left-section{display:none!important;}
     .dash-cont-mobile-view {display:block;padding:30px 40px;}
-    .header-sections{padding:20px 0!important;}
-    .lg-sub-inners-left-sec{width:100%!important;}
+    .header-sections{padding:20px 20px!important;}
+    .lg-sub-inners-left-sec{width:100%!important;border:none!important;}
     .lg-sub-inners-right-sec{width:100%!important;}
+    .lg-sg-form-se{padding:0 50px!important;}
+    .lg-sg-form-ins{width:auto!important;margin:0!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
+    span.ft-f1-headers{font-size:15px!important;}
+    ul.f1-ul li a,li.contact-details{font-size:13px!important;}
+    .only-footer-sub-inners-sec{padding:0!important;}
+    a.at-s{height:30px!important;width:30px!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
 } 
 @media screen and (min-width:768px) and (max-width:997px)
 {
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features{width:50%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
     span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
     .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
     .card-outer{padding:10px 15px 10px 15px!important;}
     .card-outer-work-testimonial{width:100%;}
+    .onl-sub-inners-left-section{display:none!important;}
+    .dash-cont-mobile-view {display:block;padding:30px 40px;}
+    .only-sub-inners-right-sections{width:100%!important;}
+    .lg-sg-form-se{padding:0 50px!important;}
+    .lg-sg-form-ins{width:auto!important;margin:0!important;}
+    span.welcome-online-help{font-size:22px!important;line-height:32px!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .only-sub-form-sec{padding:20px!important;width:600px!important;}
+    .lead-tstmnl-comment{padding:10px!important;}
+    .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
+    
+
+
+    
 } 
 @media screen and (min-width:998px) and (max-width:1280px)
 {
@@ -2047,4 +2112,66 @@ ul.lead-tstmnl-nm-dsg-rating li
     .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
     .card-outer{padding:10px 15px 10px 15px!important;width:33.33%!important;}
     .card-outer-online-assigments{width:50%!important;}
+    .lead-testimonial-cont{padding:20px!important;}
 } 
+@media screen and (max-width:640px)
+{
+    span.world-abouts,.world-abouts-orders,span.world-abouts{font-size:18px!important;line-height:26px!important;}
+    .inner-test ul li,.card-online-list ul li,.work-headers-works,.lead-tstmnl-comment{font-size:13px!important;line-height:20px!important;}
+    span.card-assignment-online,.card-outer .card-sp,span.lead-tstmnl-comment-sec{font-size:14px!important;line-height:24px!important;}
+    .header-content-sections{font-size:22px!important;line-height:32px!important;}
+    .lg-sg-form-se{padding:0 20px!important;}
+    .lg-sub-inners{padding: 20px 10px 20px 10px!important;}
+    .lg-contents-sc{padding-top:30px!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .form-sections-login{padding:0 20px!important;}
+  
+}
+@media screen and (max-width:520px)
+{
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
+}
+
+.main-gallery 
+{
+
+    width:100%;
+    float: left;
+}
+  
+  .gallery-cell 
+  {
+    width: 100%;
+  }
+  
+  .testimonial
+   {
+    text-align: center;
+    padding: 0 20px;
+    outline:none!important;
+  }
+  
+  .testimonial-avatar {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .testimonial-quote {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0;
+  }
+  
+  .testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #7AA641;
+  }
+  
+  .flickity-page-dots {
+    bottom: 25px;
+  }
+  
+
+  

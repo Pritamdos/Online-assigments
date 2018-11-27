@@ -10,36 +10,35 @@ $(document).ready(function () {
     $("#slide-down").click(function () {
         $(".notif-item").addClass('hide').addClass('slideInDown');
     });
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        items:1,
+    // $('.owl-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     responsiveClass: true,
+    //     items: 1,
+    // });
+
+    jQuery(function ($) {
+
+        var doAnimations = function () {
+            var offset = $(window).scrollTop() + $(window).height(),
+                $animatables = $('.animatable');
+            if ($animatables.length == 0) {
+                $(window).off('scroll', doAnimations);
+            }
+            $animatables.each(function (i) {
+                var $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                    $animatable.removeClass('animatable').addClass('animated');
+                }
+            });
+
+        };
+
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll');
 
     });
 
-jQuery(function($) {
-
-    var doAnimations = function() {
-      var offset = $(window).scrollTop() + $(window).height(),
-          $animatables = $('.animatable');
-      if ($animatables.length == 0) {
-        $(window).off('scroll', doAnimations);
-      }
-          $animatables.each(function(i) {
-         var $animatable = $(this);
-              if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-          $animatable.removeClass('animatable').addClass('animated');
-              }
-      });
-  
-      };
-
-      $(window).on('scroll', doAnimations);
-    $(window).trigger('scroll');
-  
-  });
-      
 
 });
 
