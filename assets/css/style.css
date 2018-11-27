@@ -1145,7 +1145,7 @@ span.card-logos
     }
     .nav ul ul
     {
-        background:rgba(0,0,0,0.6);
+        background:rgba(0,0,0,0.8);
     }
   
 }
@@ -2206,13 +2206,13 @@ label.hd-hide {
         overflow: hidden;
         float: left;
     }
-    input 
+    .profile-right-sec input 
     {
       position: absolute;
       opacity: 0;
       z-index: -1;
     }
-    label 
+    .profile-right-sec label 
     {
         position: relative;
         display: block;
@@ -2252,12 +2252,12 @@ label.hd-hide {
       margin: 1em;
     }
     /* :checked */
-    input:checked ~ .tab-content-profile 
+    .profile-right-sec input:checked ~ .tab-content-profile 
     {
       max-height:100%;
     }
     /* Icon */
-    label::after 
+    .profile-right-sec label::after 
     {
       position: absolute;
       right: 0;
@@ -2271,19 +2271,19 @@ label.hd-hide {
       -o-transition: all .35s;
       transition: all .35s;
     }
-    input[type=checkbox] + label::before
+    .profile-right-sec input[type=checkbox] + label::before
     {
       content: "+";
     }
-    input[type=radio] + label::before
+    .profile-right-sec input[type=radio] + label::before
     {
       content: "\25BC";
     }
-    input[type=checkbox]:checked + label::before
+    .profile-right-sec input[type=checkbox]:checked + label::before
     {
       transform: rotate(315deg);
     }
-    input[type=radio]:checked + label::before
+    .profile-right-sec input[type=radio]:checked + label::before
      {
       transform: rotateX(180deg);
     }
