@@ -3,8 +3,6 @@ $(document).ready(function () {
     $(document).on("click", ".notif-btn", function () {
         $(".notif-item").toggleClass('hide');
     });
-
-   AOS.init();
     $('.nav').nav();
     $(".notif-flex .click").click(function () {
         $(".notif-flex").toggleClass('off');
@@ -12,17 +10,35 @@ $(document).ready(function () {
     $("#slide-down").click(function () {
         $(".notif-item").addClass('hide').addClass('slideInDown');
     });
-    $('.lead-tstmnl-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        autoplay:true,
-        autoplaySpeed: 4000,
-        dots: true,
-        arrows: false
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+
+    });
+
+jQuery(function($) {
+
+    var doAnimations = function() {
+      var offset = $(window).scrollTop() + $(window).height(),
+          $animatables = $('.animatable');
+      if ($animatables.length == 0) {
+        $(window).off('scroll', doAnimations);
+      }
+          $animatables.each(function(i) {
+         var $animatable = $(this);
+              if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+          $animatable.removeClass('animatable').addClass('animated');
+              }
       });
-      
+  
+      };
+
+      $(window).on('scroll', doAnimations);
+    $(window).trigger('scroll');
+  
+  });
       
 
 });
