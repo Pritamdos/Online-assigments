@@ -578,7 +578,8 @@ li.contact-details
 }
 .drop-arrow
 {
-   color:#3b9bb9; 
+    color: #3b9bb9;
+    float: right;
 }
 .notify-outer-popos 
 {
@@ -662,20 +663,20 @@ header h1:before{
 
 .nav ul ul
 {
-    background:#000;
+    background:rgba(0,0,0,0.6);
 }
 .nav ul ul ul{
-    background:#000;
+    background:rgba(0,0,0,0.6);
 }
 .nav ul ul ul ul{
-    background:#000;
+    background:rgba(0,0,0,0.6);
 }
 .nav ul ul ul ul ul{
     background:#493e36
 }
 .nav li
 {
-    border-top:1px solid #59544F;
+    border-top:1px solid rgba(0,0,0,.3);
     cursor:pointer
 }
 
@@ -751,12 +752,12 @@ img.logg {
     }
     .nav .nav-submenu li
     {
-        min-width:110px;
+        min-width:130px;
         display:flex;
         justify-content:center;
         align-items: center;
         color: #fff;
-        background-color:#3b9bb9;
+
     }
     .nav .nav-submenu>ul
     {
@@ -1144,7 +1145,7 @@ span.card-logos
     }
     .nav ul ul
     {
-        background:#3b9bb9!important;
+        background:rgba(0,0,0,0.6);
     }
   
 }
@@ -1205,7 +1206,7 @@ span.card-logos
   }
   .fott-containers
   {
-     width:1366px;
+     width:1280px;
      margin: 0 auto;
  
  }
@@ -1223,7 +1224,7 @@ span.card-logos
  {
     background-color:#f2f2f2!important;
  }
- @media screen and (max-width:1366px)
+ @media screen and (max-width:1280px)
  {
     .fott-containers{width:100%!important;float:left!important;}
  }
@@ -1524,7 +1525,17 @@ span.card-logos
         border-radius: 5px 0 0 0;
         cursor: pointer;
     }
-    span.closed-iconss i.fa.fa-arrow-down.drop-arrow
+    .i.material-icons.drop-arrow
+    {
+        font-size:26px!important;
+    }
+    .drop-arrow-right
+    {
+        color:#fff;
+        float:right;
+        margin-left:5px;
+    }
+    span.closed-iconss i.material-icons .drop-arrow
     {
         color:#fff;
     }
