@@ -185,6 +185,14 @@ span.on-sub-headers {
     margin:10px 0;
     position: relative;
 }
+span.edit-data
+ {
+    position: absolute;
+    top: 8px;
+    margin-left: 9px;
+    color: #666;
+    cursor: pointer;
+}
 .each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"],.each-rows-inputs input[type="number"],
 .each-rows-inputs input[type="password"],.each-rows-inputs input[type="time"]
 {
@@ -2178,7 +2186,7 @@ label.hd-hide.persoanl-Informations,.history-details
     position: fixed;
     bottom:0;
 } */
-@media(max-width:1024px)
+@media(max-width:768px)
 {
     .profile-outer-section{display: block;}
     .profile-section-uni{margin-top:0;width:100%!important;height: inherit!important;border-right: none!important;position: relative!important;}
@@ -2193,6 +2201,7 @@ label.hd-hide.persoanl-Informations,.history-details
     .profile-sub-inner-section{background-color:#f7f7f7!important;}
     .button-section{padding: 20px 0 20px 2px!important;}
     .profile-right-sec{height:initial!important;}
+    .table-users{padding:20px;}
     
     .tab-left-sections,.tab-right-sections,.tab-middle-sections
     {
@@ -2299,17 +2308,17 @@ label.hd-hide.persoanl-Informations,.history-details
     }
     
     .hd-hide{display: block;}
-    .tab [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after 
+    .tab-left-sections .tab [type="checkbox"]+label:before,.tab-left-sections[type="checkbox"]:not(.filled-in)+label:after 
     {
         border: 2px solid transparent!important;
         margin-top: 13px!important;
         right:10px!important;
         left:inherit!important;
     }
-    .tab-content-profile
+    /* .tab-content-profile
     {
         padding:10px 20px;
-    }
+    } */
    
 }
 
