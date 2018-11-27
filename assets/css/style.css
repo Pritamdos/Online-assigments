@@ -2070,11 +2070,6 @@ ul.lead-tstmnl-nm-dsg-rating li
     margin-top:62px;
 }
 
-.tab-left-sections 
-{
-    width:25%;
-    float: left;
-}
 
 .ds-show
 {
@@ -2138,7 +2133,18 @@ input#tab-one,input#tab-two
 }
 .profile-right-sec 
 {
-    width: 75%;
+    width:60%;
+    float: left;
+}
+
+.tab-left-sections 
+{
+    width:20%;
+    float: left;
+}
+.tab-middle-sections
+{
+    width:20%;
     float: left;
 }
 .tab-content-profile {
@@ -2183,7 +2189,7 @@ label.hd-hide.persoanl-Informations,.history-details
     .button-section{padding: 20px 0 20px 2px!important;}
     .profile-right-sec{height:initial!important;}
     
-    .tab-left-sections,.tab-right-sections
+    .tab-left-sections,.tab-right-sections,.tab-middle-sections
     {
       width:100%;
       float: left;
@@ -2294,6 +2300,10 @@ label.hd-hide.persoanl-Informations,.history-details
         margin-top: 13px!important;
         right:10px!important;
         left:inherit!important;
+    }
+    .tab-content-profile
+    {
+        padding:10px 20px;
     }
    
 }
