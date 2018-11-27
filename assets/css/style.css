@@ -1145,7 +1145,7 @@ span.card-logos
     }
     .nav ul ul
     {
-        background:rgba(0,0,0,0.8);
+        background:rgba(0,0,0,0.6);
     }
   
 }
@@ -2162,9 +2162,6 @@ label.hd-hide.persoanl-Informations,.history-details
     color:#666;
     font-weight:600;
 }
-label.hd-hide {
-    padding: 0!important;
-}
 .welcome-footers
 {
     position: fixed;
@@ -2186,17 +2183,14 @@ label.hd-hide {
     .button-section{padding: 20px 0 20px 2px!important;}
     .profile-right-sec{height:initial!important;}
     
-    
-   
-    .half 
-    {
-      float: left;
-      width:100%;
-    }
     .tab-left-sections,.tab-right-sections
     {
       width:100%;
       float: left;
+    }
+    .profiles-wrapper
+    {
+        padding:0!important;
     }
     .tab 
     {
@@ -2206,13 +2200,13 @@ label.hd-hide {
         overflow: hidden;
         float: left;
     }
-    .profile-right-sec input 
+    .profile-outer-section input 
     {
       position: absolute;
       opacity: 0;
       z-index: -1;
     }
-    .profile-right-sec label 
+    .profile-outer-section label 
     {
         position: relative;
         display: block;
@@ -2252,12 +2246,12 @@ label.hd-hide {
       margin: 1em;
     }
     /* :checked */
-    .profile-right-sec input:checked ~ .tab-content-profile 
+   .profile-outer-section input:checked ~ .tab-content-profile 
     {
       max-height:100%;
     }
     /* Icon */
-    .profile-right-sec label::after 
+    .profile-outer-section label::after 
     {
       position: absolute;
       right: 0;
@@ -2271,23 +2265,27 @@ label.hd-hide {
       -o-transition: all .35s;
       transition: all .35s;
     }
-    .profile-right-sec input[type=checkbox] + label::before
+    .profile-outer-section input[type=checkbox] + label::before
     {
       content: "+";
     }
-    .profile-right-sec input[type=radio] + label::before
+    .profile-outer-section input[type=radio] + label::before
     {
       content: "\25BC";
     }
-    .profile-right-sec input[type=checkbox]:checked + label::before
+    .profile-outer-section input[type=checkbox]:checked + label::before
     {
       transform: rotate(315deg);
     }
-    .profile-right-sec input[type=radio]:checked + label::before
+    .profile-outer-section input[type=radio]:checked + label::before
      {
       transform: rotateX(180deg);
     }
-    
+    .profile-outer-section [type="checkbox"]:not(:checked) + label:before, .profile-outer-section [type="checkbox"]:checked + label:before,
+    .profile-outer-section [type="checkbox"]:not(:checked) + label:after, .profile-outer-section  [type="checkbox"]:checked + label:after
+    {
+        display:block!important;
+    }
     
     .hd-hide{display: block;}
     .tab [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after 
