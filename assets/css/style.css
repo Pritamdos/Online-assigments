@@ -34,7 +34,7 @@ body
     justify-content: center;
     align-items: center;
     background-position: center;
-    margin-top:65px;
+    margin-top:70px;
 }
 .onl-inrs-banner-sections-login-signup
 {
@@ -183,6 +183,7 @@ span.on-sub-headers {
     width:100%;
     float: left;
     margin:10px 0;
+    position: relative;
 }
 .each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"],.each-rows-inputs input[type="number"],
 .each-rows-inputs input[type="password"],.each-rows-inputs input[type="time"]
@@ -198,6 +199,9 @@ span.on-sub-headers {
     font-size: 13px;
     color: #888!important;
     box-sizing: border-box;
+    position: relative;
+    opacity:1;
+    z-index:9999;
 }
 .each-rows-inputs input[type="text"]:focus,.each-rows-inputs input[type="date"]:focus
 {
@@ -430,8 +434,8 @@ li.contact-details
 .nav-button, .nav-close 
 {
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right:20px;
+    top:15px;
     color:#3b9bb9;
 }
 .nav-button, .nav-close  i.fa.fa-bars {
@@ -479,7 +483,7 @@ li.contact-details
     .nav ul ul{
         display:none;
         position:absolute;
-        top:95%;
+        top:97%;
         left:0;
         z-index:901;
         background:#fff;
@@ -598,7 +602,7 @@ li.contact-details
     float: left;
     position: fixed;
     background:#fff;
-    height:65px;
+    height:70px;
     margin: 0;
     padding: 0;
     z-index: 9999;
@@ -691,7 +695,7 @@ header h1:before{
 .nav a,.nav a:active,.nav a:visited
 {
   
-    padding:23px;
+    padding:25px;
     text-decoration:none;
     color:#888;
     font-size:16px;
@@ -704,7 +708,7 @@ header h1:before{
 .logo-onli 
 {
     width: 160px;
-    height: 60px;
+    height: 68px;
     float: left;
     margin: 0;
     padding: 0;
@@ -2067,7 +2071,9 @@ ul.lead-tstmnl-nm-dsg-rating li
 	width:100%;
 	float:left;
     display: flex;
-    margin-top:62px;
+    margin-top:70px;
+    min-height:800px;
+    background:#f7f7f7;
 }
 
 
@@ -2133,20 +2139,16 @@ input#tab-one,input#tab-two
 }
 .profile-right-sec 
 {
-    width:60%;
-    float: left;
+    width:70%;
+    float:left;
 }
 
 .tab-left-sections 
 {
-    width:20%;
+    width:30%;
     float: left;
 }
-.tab-middle-sections
-{
-    width:20%;
-    float: left;
-}
+
 .tab-content-profile {
     width: 100%;
     float: left;
@@ -2167,12 +2169,15 @@ label.hd-hide.persoanl-Informations,.history-details
     padding: 0;
     color:#666;
     font-weight:600;
+    width:100%;
+    float: left;
+    text-align: center;
 }
-.welcome-footers
+/* .welcome-footers
 {
     position: fixed;
     bottom:0;
-}
+} */
 @media(max-width:1024px)
 {
     .profile-outer-section{display: block;}
@@ -2451,8 +2456,8 @@ label.hd-hide.persoanl-Informations,.history-details
 }
 .order-images
 {
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     float: left;
     border-radius:50%;
     box-sizing: border-box;
@@ -2488,7 +2493,7 @@ label.hd-hide.persoanl-Informations,.history-details
 }
 .each-rows-secss td
 {
-    font-size:14px;
+    font-size:13px;
     color:#666;
 }
 .table-users th:first-child
@@ -2512,11 +2517,12 @@ tbody tr:nth-child(even)
 {
     background-color:#f7f7f7;
 }
+
 .profile-user-details-info 
 {
     width: 100%;
     float: left;
-    padding: 30px;
+    padding:15px 0 0 0;
 }
 span.usser-profiles-details-items 
 {
@@ -2526,10 +2532,42 @@ span.usser-profiles-details-items
     justify-content: center;
     align-items: center;
 }
+.each-rows-inputs textarea
+{
+    width:100%;
+    float: left;
+    height:70px;
+    overflow-y: auto;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0;
+    padding:10px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #888!important;
+    box-sizing: border-box;
+}
+.each-rows-inputs textarea:focus
+{
+    outline:none!important;
+}
+.form-inner-sections-profiles
+{
+    width:100%;
+    float: left;
+}
+.form-sections-profiles 
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 15px 35px 0 20px;
+}
 span.usr-info-icons 
 {
-    height: 100px;
-    width: 100px;
+    height:80px;
+    width:80px;
     float: left;
     border-radius: 50%;
     overflow: hidden;
@@ -2542,4 +2580,8 @@ span.usr-info-icons img
     width:100%;
     height:100%;
     float: left;
+}
+.profile-outer-section [type="checkbox"]:not(:checked) + label
+{
+    padding-left:0!important;
 }
