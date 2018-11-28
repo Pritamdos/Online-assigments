@@ -2155,6 +2155,7 @@ ul.lead-tstmnl-nm-dsg-rating li
     display: flex;
     margin-top:70px;
     min-height:800px;
+    border-top:1px solid #ddd;
 }
 
 
@@ -2216,12 +2217,14 @@ input#tab-one,input#tab-two
 {
     width: 100%;
     float: left;
-    padding:30px;
 }
 .profile-right-sec 
 {
-    width:65%;
-    float:left;
+    width: 65%;
+    float: left;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    padding: 15px;
 }
 
 .tab-left-sections 
@@ -2230,9 +2233,12 @@ input#tab-one,input#tab-two
     float: left;
 }
 
-.tab-content-profile {
+.tab-content-profile 
+{
     width: 100%;
     float: left;
+    margin-top:10px;
+    border-bottom:1px solid #ddd;
 }
 .profile-right-sec .tab
 {
@@ -2292,6 +2298,19 @@ label.hd-hide.persoanl-Informations,.history-details
         color: #000;
         overflow: hidden;
         float: left;
+    }
+    
+    .tab-content-profile
+    {
+        border:none!important;
+    } 
+    .tab-content-profile
+    {
+        margin:0!important;
+    }
+    .profile-right-sec
+    {
+        padding:0!important;
     }
     .profile-outer-section input 
     {
@@ -2471,6 +2490,10 @@ label.hd-hide.persoanl-Informations,.history-details
     height:500px;
     overflow-y: auto;
 }
+::-webkit-scrollbar-track{border-radius:0;background-color:#f5f5f5}
+::-webkit-scrollbar{width:10px;background-color:rgba(0,0,0,.2)}
+::-webkit-scrollbar:horizontal{height:10px;background-color:rgba(0,0,0,.2)}
+::-webkit-scrollbar-thumb{border-radius:4px;background-color:rgba(0,0,0,.2)}
 .order-images
 {
     width:40px;
