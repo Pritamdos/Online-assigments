@@ -2081,7 +2081,6 @@ ul.lead-tstmnl-nm-dsg-rating li
     display: flex;
     margin-top:70px;
     min-height:800px;
-    background:#f7f7f7;
 }
 
 
@@ -2230,16 +2229,16 @@ label.hd-hide.persoanl-Informations,.history-details
     {
         position: relative;
         display: block;
-        background: #f7f7f7;
+        background:#3b9bb9;
+        color:#fff;
         height: 50px;
         cursor: pointer;
         margin: 0;
         padding: 14px 0 0 30px;
-        color: #666;
+
         font-weight: 100!important;
-        border-bottom: 1px solid #d7d7d7;
+        border-bottom: 1px solid #fff;
         font-size: 18px;
-        color: #666;
         font-family: OsSemiBold;
         line-height: 20px;
     
@@ -2287,7 +2286,10 @@ label.hd-hide.persoanl-Informations,.history-details
     }
     .profile-outer-section input[type=checkbox] + label::before
     {
-      content: "+";
+        content: "+";
+        font-size: 28px;
+        font-weight: 600;
+        color:#fff;
     }
     .profile-outer-section input[type=radio] + label::before
     {
@@ -2306,20 +2308,31 @@ label.hd-hide.persoanl-Informations,.history-details
     {
         display:block!important;
     }
+    .profile-outer-section [type="checkbox"]:not(:checked) + label:after,  .profile-outer-section [type="checkbox"]:checked + label:after
+    {
+        display:none!important;
+    }
     
     .hd-hide{display: block;}
-    .tab-left-sections .tab [type="checkbox"]+label:before,.tab-left-sections[type="checkbox"]:not(.filled-in)+label:after 
+    .tab-left-sections .tab [type="checkbox"]+label:before,.tab-left-sections[type="checkbox"]:not(.filled-in)+label:after,
+    .profile-right-sec .tab [type="checkbox"]+label:before,.profile-right-sec[type="checkbox"]:not(.filled-in)+label:after  
     {
         border: 2px solid transparent!important;
         margin-top: 13px!important;
         right:10px!important;
         left:inherit!important;
+        background:transparent;
     }
     /* .tab-content-profile
     {
         padding:10px 20px;
     } */
-   
+    label.hd-hide.persoanl-Informations, .history-details
+    {
+        color:#fff!important;
+        font-weight: 100;
+        font-size:18px;
+    }
 }
 
 /* welcome end */
@@ -2575,8 +2588,8 @@ span.usser-profiles-details-items
 }
 span.usr-info-icons 
 {
-    height:80px;
-    width:80px;
+    height:100px;
+    width:100px;
     float: left;
     border-radius: 50%;
     overflow: hidden;
@@ -2593,4 +2606,21 @@ span.usr-info-icons img
 .profile-outer-section [type="checkbox"]:not(:checked) + label
 {
     padding-left:0!important;
+}
+a.save,a.chageg
+{
+    float: left;
+    text-decoration: none;
+    background: rgba(59, 155, 185,0.7);
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight:600;
+    line-height: 22px;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-transform: uppercase;
+
 }
