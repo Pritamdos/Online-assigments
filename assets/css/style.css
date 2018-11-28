@@ -192,6 +192,18 @@ span.edit-data
     margin-left: 9px;
     color: #666;
     cursor: pointer;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid #666;
+    padding: 2px 0 0px 4px;
+    text-align: center;
+  
+}
+span.edit-data i.fa.fa-pencil
+{
+    font-size: 15px!important;
+    float: left;
 }
 .each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"],.each-rows-inputs input[type="number"],
 .each-rows-inputs input[type="password"],.each-rows-inputs input[type="time"]
@@ -2146,13 +2158,13 @@ input#tab-one,input#tab-two
 }
 .profile-right-sec 
 {
-    width:70%;
+    width:75%;
     float:left;
 }
 
 .tab-left-sections 
 {
-    width:30%;
+    width:25%;
     float: left;
 }
 
@@ -2336,87 +2348,6 @@ label.hd-hide.persoanl-Informations,.history-details
 }
 
 /* welcome end */
-@media screen and (max-width:767px)
-{
-    .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
-    span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
-    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
-    span.welcome-online-help{font-size:22px!important;line-height:32px!important}
-    .onl-sub-inners-left-section{width:100%!important;}
-    .onl-sub-inners-left-section{position: absolute!important}
-    .onl-sub-inners-left-section{top:0!important;transform: translateY(0%)!important;margin-top: 20px;}
-    .onl-sub-inners-sec{padding:20px!important;}
-    .only-sub-inners-right-sections{width:100%!important;float:left!important;}
-    .only-sub-inners-right-sections{padding:0!important;}
-    .only-sub-form-sec{padding:20px!important;width:80%!important;}
-    .card-outer-work-hire-onlines{padding:0!important;}
-    .onl-sub-inners-left-section{display:none!important;}
-    .dash-cont-mobile-view {display:block;padding:30px 40px;}
-    .header-sections{padding:20px 20px!important;}
-    .lg-sub-inners-left-sec{width:100%!important;border:none!important;}
-    .lg-sub-inners-right-sec{width:100%!important;}
-    .lg-sg-form-se{padding:0 50px!important;}
-    .lg-sg-form-ins{width:auto!important;margin:0!important;}
-    .lead-testimonial-cont{padding:20px!important;}
-    .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
-    span.ft-f1-headers{font-size:15px!important;}
-    ul.f1-ul li a,li.contact-details{font-size:13px!important;}
-    .only-footer-sub-inners-sec{padding:0!important;}
-    a.at-s{height:30px!important;width:30px!important;}
-    .card-outer-work-hire-onlines{padding:0!important;}
-} 
-@media screen and (min-width:768px) and (max-width:997px)
-{
-    .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features{width:50%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
-    span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
-    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
-    .card-outer{padding:10px 15px 10px 15px!important;}
-    .card-outer-work-testimonial{width:100%;}
-    .onl-sub-inners-left-section{display:none!important;}
-    .dash-cont-mobile-view {display:block;padding:30px 40px;}
-    .only-sub-inners-right-sections{width:100%!important;}
-    .lg-sg-form-se{padding:0 50px!important;}
-    .lg-sg-form-ins{width:auto!important;margin:0!important;}
-    span.welcome-online-help{font-size:22px!important;line-height:32px!important;}
-    .lead-testimonial-cont{padding:20px!important;}
-    .only-sub-form-sec{padding:20px!important;width:600px!important;}
-    .lead-tstmnl-comment{padding:10px!important;}
-    .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
-    .card-outer-work-hire-onlines{padding:0!important;}
-    
-
-
-    
-} 
-@media screen and (min-width:998px) and (max-width:1280px)
-{
-    .card-outer-work{width:33.33%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
-    span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
-    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
-    .card-outer{padding:10px 15px 10px 15px!important;width:33.33%!important;}
-    .card-outer-online-assigments{width:50%!important;}
-    .lead-testimonial-cont{padding:20px!important;}
-} 
-@media screen and (max-width:640px)
-{
-    span.world-abouts,.world-abouts-orders,span.world-abouts{font-size:18px!important;line-height:26px!important;}
-    .inner-test ul li,.card-online-list ul li,.work-headers-works,.lead-tstmnl-comment{font-size:13px!important;line-height:20px!important;}
-    span.card-assignment-online,.card-outer .card-sp,span.lead-tstmnl-comment-sec{font-size:14px!important;line-height:24px!important;}
-    .header-content-sections{font-size:22px!important;line-height:32px!important;}
-    .lg-sg-form-se{padding:0 20px!important;}
-    .lg-sub-inners{padding: 20px 10px 20px 10px!important;}
-    .lg-contents-sc{padding-top:30px!important;}
-    .lead-testimonial-cont{padding:20px!important;}
-    .form-sections-login{padding:0 20px!important;}
-  
-}
-@media screen and (max-width:520px)
-{
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
-}
 
 .main-gallery 
 {
@@ -2471,10 +2402,12 @@ label.hd-hide.persoanl-Informations,.history-details
 {
     padding-left: 10px;
 }
-.table-users {
+.table-users 
+{
     width: 100%;
     float: left;
-    padding-top:10px;
+    height:500px;
+    overflow-y: auto;
 }
 .order-images
 {
@@ -2584,18 +2517,28 @@ span.usser-profiles-details-items
     width: 100%;
     float: left;
     margin: 0;
-    padding: 15px 35px 0 20px;
+    padding: 15px 50px 20px 50px;
 }
 span.usr-info-icons 
 {
     height:100px;
-    width:100px;
-    float: left;
-    border-radius: 50%;
+    width: 100px;
     overflow: hidden;
-    box-sizing: border-box;
     margin: 0;
-    padding:0;;
+    margin: 0 auto;
+    background: gainsboro;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
 }
 span.usr-info-icons img
 {
@@ -2603,10 +2546,10 @@ span.usr-info-icons img
     height:100%;
     float: left;
 }
-.profile-outer-section [type="checkbox"]:not(:checked) + label
+/* .profile-outer-section [type="checkbox"]:not(:checked) + label
 {
     padding-left:0!important;
-}
+} */
 a.save,a.chageg
 {
     float: left;
@@ -2623,4 +2566,128 @@ a.save,a.chageg
     cursor: pointer;
     text-transform: uppercase;
 
+}
+span.changes-profiles-sec
+{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    line-height: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius:5px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width:6px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius:5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#ccc;
+}
+
+@media screen and (max-width:767px)
+{
+    .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
+    span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
+    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
+    span.welcome-online-help{font-size:22px!important;line-height:32px!important}
+    .onl-sub-inners-left-section{width:100%!important;}
+    .onl-sub-inners-left-section{position: absolute!important}
+    .onl-sub-inners-left-section{top:0!important;transform: translateY(0%)!important;margin-top: 20px;}
+    .onl-sub-inners-sec{padding:20px!important;}
+    .only-sub-inners-right-sections{width:100%!important;float:left!important;}
+    .only-sub-inners-right-sections{padding:0!important;}
+    .only-sub-form-sec{padding:20px!important;width:80%!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
+    .onl-sub-inners-left-section{display:none!important;}
+    .dash-cont-mobile-view {display:block;padding:30px 40px;}
+    .header-sections{padding:20px 20px!important;}
+    .lg-sub-inners-left-sec{width:100%!important;border:none!important;}
+    .lg-sub-inners-right-sec{width:100%!important;}
+    .lg-sg-form-se{padding:0 50px!important;}
+    .lg-sg-form-ins{width:auto!important;margin:0!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
+    span.ft-f1-headers{font-size:15px!important;}
+    ul.f1-ul li a,li.contact-details{font-size:13px!important;}
+    .only-footer-sub-inners-sec{padding:0!important;}
+    a.at-s{height:30px!important;width:30px!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
+} 
+@media screen and (min-width:768px) and (max-width:997px)
+{
+    .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features{width:50%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
+    span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
+    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
+    .card-outer{padding:10px 15px 10px 15px!important;}
+    .card-outer-work-testimonial{width:100%;}
+    .onl-sub-inners-left-section{display:none!important;}
+    .dash-cont-mobile-view {display:block;padding:30px 40px;}
+    .only-sub-inners-right-sections{width:100%!important;}
+    .lg-sg-form-se{padding:0 50px!important;}
+    .lg-sg-form-ins{width:auto!important;margin:0!important;}
+    span.welcome-online-help{font-size:22px!important;line-height:32px!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .only-sub-form-sec{padding:20px!important;width:600px!important;}
+    .lead-tstmnl-comment{padding:10px!important;}
+    .lead-tstmnl-comment{padding:10px!important;font-size:13px!important;line-height:20px!important;}
+    .card-outer-work-hire-onlines{padding:0!important;}
+    .tab-left-sections{width:40%!important;}
+    .profile-right-sec{width:60%!important;}
+    .form-sections-profiles{    padding: 15px 34px 20px 35px!important;}
+    
+
+
+    
+} 
+@media screen and (min-width:998px) and (max-width:1280px)
+{
+    .card-outer-work{width:33.33%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
+    span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
+    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
+    .card-outer{padding:10px 15px 10px 15px!important;width:33.33%!important;}
+    .card-outer-online-assigments{width:50%!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .tab-left-sections{width:40%!important;}
+    .profile-right-sec{width:60%!important;}
+} 
+@media screen and (max-width:640px)
+{
+    span.world-abouts,.world-abouts-orders,span.world-abouts{font-size:18px!important;line-height:26px!important;}
+    .inner-test ul li,.card-online-list ul li,.work-headers-works,.lead-tstmnl-comment{font-size:13px!important;line-height:20px!important;}
+    span.card-assignment-online,.card-outer .card-sp,span.lead-tstmnl-comment-sec{font-size:14px!important;line-height:24px!important;}
+    .header-content-sections{font-size:22px!important;line-height:32px!important;}
+    .lg-sg-form-se{padding:0 20px!important;}
+    .lg-sub-inners{padding: 20px 10px 20px 10px!important;}
+    .lg-contents-sc{padding-top:30px!important;}
+    .lead-testimonial-cont{padding:20px!important;}
+    .form-sections-login{padding:0 20px!important;}
+  
+}
+@media screen and (max-width:520px)
+{
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
 }
