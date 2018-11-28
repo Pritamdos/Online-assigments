@@ -205,7 +205,7 @@ span.edit-data i.fa.fa-pencil
     font-size: 15px!important;
     float: left;
 }
-.each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"],.each-rows-inputs input[type="number"],
+.each-rows-inputs input[type="text"],.each-rows-inputs input[type="date"],.each-rows-inputs input[type="number"],.each-rows-inputs input[type="email"],
 .each-rows-inputs input[type="password"],.each-rows-inputs input[type="time"]
 {
     width: 100%;
@@ -214,16 +214,33 @@ span.edit-data i.fa.fa-pencil
     border: 1px solid #ddd;
     border-radius: 4px;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 10px 0 40px;
     line-height: 18px;
     font-size: 13px;
     color: #888!important;
     box-sizing: border-box;
     position: relative;
-    opacity:1;
-    z-index:9999;
+    opacity: 1;
+    z-index: 9999;
 }
-.each-rows-inputs input[type="text"]:focus,.each-rows-inputs input[type="date"]:focus
+.each-rows-inputss input[type="date"]
+{
+    width: 100%;
+    float: left;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #888!important;
+    box-sizing: border-box;
+    position: relative;
+    opacity: 1;
+    z-index: 9999;
+}
+.each-rows-inputs input[type="text"]:focus,.each-rows-inputs input[type="date"]:focus,.each-rows-inputs input[type="email"]:focus
 {
     outline:none;
 }
@@ -1251,6 +1268,12 @@ span.card-logos
      width:100%;
      float: left;
      background:#373737;
+     position: relative;
+ }
+ i.fa.fa-arrow-up
+ {
+   color:#fff;
+   font-size:20px
  }
  .how-work
  {
@@ -1518,15 +1541,16 @@ span.card-logos
     width: 100%;
     float: left;
     margin:10px 0;
+    position: relative;
 }
-.lg-fr  input[type="text"],.lg-fr  input[type="password"],.lg-fr  input[type="date"]   
+.lg-fr  input[type="text"],.lg-fr  input[type="password"],.lg-fr  input[type="date"],.lg-fr  input[type="email"]      
 {
     width: 100%;
     float: left;
-    height: 45px;
+    height: 40px;
     border: 1px solid #ddd;
     border-radius:4px;
-    padding: 0 10px;
+    padding: 0 10px 0 40px;
     font-size: 13px;
     color: #888;
     margin: 0;
@@ -1534,7 +1558,7 @@ span.card-logos
     line-height: 18px;
     font-family: 'opensans-regular';
 }
-.lg-fr input[type="text"]:focus,.lg-fr input[type="password"]:focus
+.lg-fr input[type="text"]:focus,.lg-fr input[type="password"]:focus,.lg-fr input[type="email"]:focus
 {
     outline:none!important;
 }
@@ -2175,13 +2199,13 @@ input#tab-one,input#tab-two
 }
 .profile-right-sec 
 {
-    width:75%;
+    width:65%;
     float:left;
 }
 
 .tab-left-sections 
 {
-    width:25%;
+    width:35%;
     float: left;
 }
 
@@ -2666,6 +2690,36 @@ i.fa.fa-plus.counter-icns,i.fa.fa-minus.counter-icns
     font-weight:100;
     color:#888;
 }
+.top-to-bottom-se 
+{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: #3b9bb9;
+    right: 7px;
+    z-index: 99999999;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    bottom: 0;
+}
+span.users-pp 
+{
+    position: absolute;
+    height: 40px;
+    width: 35px;
+    left: 0;
+    z-index: 999999;
+    border-radius: 2px 0 0 2px;
+    background: #3b9bb9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
 @media screen and (max-width:767px)
 {
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
