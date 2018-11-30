@@ -1083,15 +1083,50 @@ span.card-assignment-online
 {
     width: 100%;
     float: left;
-    font-size: 15px;
+    font-size: 14px;
     color: #666;
-    height:50px;
+    height:65px;
     background: #3b9bb9;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     justify-content: center;
+    padding:10px 15px 10px 15px;
     align-items: center;
     color: #fff;
+}
+.flickity-prev-next-button 
+{
+    position: absolute;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    background: hsla(0,0%,100%,.75);
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.flickity-prev-next-button svg
+ {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+.flickity-prev-next-button.previous {
+    left: 10px;
+}
+.flickity-prev-next-button svg 
+{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
 }
 .card-inner-section 
 {
@@ -1414,7 +1449,7 @@ span.card-logos
 .card-outer-work-hire
 {
     float: left;
-    width:50%;
+    width:33.33%;
     margin-right: 0;
     margin-left: 0;
     padding: 0 30px 30px;
@@ -1431,12 +1466,9 @@ span.card-logos
 }
 .card-outer-work-testimonial
 {
-    float: left;
-    width:50%;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0 30px 30px;
-    position: relative;
+
+       width: 50%;
+       margin: 0 auto;
 }
 .card-online-hr
 {
@@ -1458,7 +1490,6 @@ span.card-logos
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        height: 484px;
 	}
     .lead-tstmnl-slider 
     {
@@ -2836,7 +2867,8 @@ span.users-pp
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
     .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right,.only-fotter-sectios-corners{width:50%!important;}
     span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
-    .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
+    .dash-cont-online-assigmnets{padding:30px 0!important;}
+    .dash-cont{padding:30px 30px!important;}
     span.welcome-online-help{font-size:22px!important;line-height:32px!important}
     .onl-sub-inners-left-section{width:100%!important;}
     .onl-sub-inners-left-section{position: absolute!important}
