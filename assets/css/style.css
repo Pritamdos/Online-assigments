@@ -281,7 +281,7 @@ span.edit-data i.fa.fa-pencil
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:25px 0 0 0;
+    margin:35px 0 0 0;
 }
 
 .only-submit 
@@ -290,7 +290,7 @@ span.edit-data i.fa.fa-pencil
     text-decoration: none;
     background:#3b9bb9;
     padding: 10px 35px;
-    border-radius: 30px;
+    border-radius:5px;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
@@ -351,9 +351,9 @@ span.welcome-online-help
     font-family: 'Pacifico', cursive;
 }
 
-.only-fotter-sectios-left,.only-fotter-sectios-middle,.only-fotter-sectios-right
+.only-fotter-sectios-left,.only-fotter-sectios-middle,.only-fotter-sectios-right,.only-fotter-sectios-corners
 {
-    width: 33.33%;
+    width:25%;
     float: left;
     padding: 20px;
 }
@@ -362,6 +362,37 @@ span.welcome-online-help
     width:100%;
     float: left;
     padding-left:30px;
+}
+.subscribe
+{
+    float: left;
+    text-decoration: none;
+    background: #3b9bb9;
+    padding: 10px 35px;
+    border-radius:2px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none!important;
+    display: block;
+    width:100%;
+}
+.subscribe:focus
+{
+    outline:none!important;
+}
+.special-offers
+{
+    width:100%;
+    float: left;
+    color:#fff;
+    font-size:14px;
+    line-height:20px;
+    margin:0;
 }
 span.ft-f1-headers 
 {
@@ -834,7 +865,7 @@ img.logg {
     .nav .nav-submenu li a
     {
         color:#fff;
-        padding:15px!important;
+        padding:10px!important;
     }
   
   
@@ -862,16 +893,16 @@ img.logg {
 }
 span.world-abouts 
 {
-    font-size:32px;
+    font-size:28px;
     color:#888;
-    line-height:42px;
+    line-height:36px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight:500;
-    font-family: 'Pacifico', cursive;
     width:100%;
     float: left;
+    text-transform:uppercase; 
 }
 span.world-abouts-texts 
 {
@@ -882,23 +913,22 @@ span.world-abouts-texts
     padding: 0;
     box-sizing: border-box;
     font-weight:500;
-    font-family: 'Pacifico', cursive;
     width:100%;
     float: left;
 
 }
 .world-abouts-orders
 {
-    font-size:32px;
+    font-size:28px;
     color:#888;
-    line-height:42px;
+    line-height:36px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight:500;
-    font-family: 'Pacifico', cursive;
     width:100%;
     float: left;
+    text-transform: uppercase;
 }
 span.orders-nows 
 {
@@ -906,7 +936,8 @@ span.orders-nows
     width: 100%;
     float: left;
     margin: 10px 0;
-    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+
 }
 .header-sections
  {
@@ -930,6 +961,34 @@ span.orders-nows
     margin-left: 0;
     padding: 0 30px 30px;
     position: relative;
+}
+.order-btn
+{
+    float: left;
+    text-decoration: none;
+    background: #3b9bb9;
+    padding: 10px 35px;
+    border-radius:5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none!important;
+}
+.order-btn:focus
+{
+    outline:none!important;
+}
+.order-now-btns
+{
+    width:100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
 }
 .card-outer-features
 {
@@ -1734,13 +1793,13 @@ span.card-logos
     }
     .lg-sub-inners-left-sec
     {
-        width: 65%;
+        width: 62%;
         float: left;
         border-right: 1px solid #ddd;
     }
     .lg-sub-inners-right-sec
     {
-        width:35%;
+        width:38%;
         float: left; 
         position: relative;
     }
@@ -1852,7 +1911,7 @@ span.card-logos
         position: absolute;
         right: 0;
         font-size: 13px;
-        top: -7px;
+        top: -3px;
     }
     span.forget-pass a
      {
@@ -2055,7 +2114,7 @@ p.user-testimonial
 span.remember-m 
 {
     position: absolute;
-    top: -23px;
+    top: -20px;
 }
 
 .links
@@ -2775,7 +2834,7 @@ span.users-pp
 @media screen and (max-width:767px)
 {
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features,.card-outer-work-testimonial{width:100%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right,.only-fotter-sectios-corners{width:50%!important;}
     span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
     .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
     span.welcome-online-help{font-size:22px!important;line-height:32px!important}
@@ -2805,7 +2864,7 @@ span.users-pp
 @media screen and (min-width:768px) and (max-width:997px)
 {
     .card-outer,.card-outer-work,.card-outer-online-assigments,.card-outer-work-hire,.card-outer-features{width:50%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right,.only-fotter-sectios-corners{width:25%!important;}
     span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
     .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
     .card-outer{padding:10px 15px 10px 15px!important;}
@@ -2824,6 +2883,7 @@ span.users-pp
     .tab-left-sections{width:40%!important;}
     .profile-right-sec{width:60%!important;}
     .form-sections-profiles{    padding: 15px 34px 20px 35px!important;}
+    .only-footer-sub-inners-sec{padding:0!important;}
     
 
 
@@ -2832,7 +2892,7 @@ span.users-pp
 @media screen and (min-width:998px) and (max-width:1280px)
 {
     .card-outer-work{width:33.33%!important;}
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:33.33%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right,.only-fotter-sectios-corners{width:25%!important;}
     span.world-abouts,.world-abouts-orders{font-size:24px;line-height:32px!important;}
     .dash-cont,.dash-cont-online-assigmnets{padding:30px 0!important;}
     .card-outer{padding:10px 15px 10px 15px!important;width:33.33%!important;}
@@ -2856,5 +2916,5 @@ span.users-pp
 }
 @media screen and (max-width:520px)
 {
-    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right{width:100%!important;}
+    .only-fotter-sectios-left, .only-fotter-sectios-middle, .only-fotter-sectios-right,.only-fotter-sectios-corners{width:100%!important;}
 }
