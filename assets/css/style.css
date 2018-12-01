@@ -132,11 +132,20 @@ body
     width:400px;
     float: left;
     background-color: #fff;
-    padding:40px;
+    padding:20px 40px;
     border-radius:5px;
     -webkit-box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.75);
+}
+span.deadline-text--educations {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #999;
+    line-height: 22px;
 }
 .only-sub-inner-form-sec
 {
@@ -178,10 +187,33 @@ span.on-sub-headers {
     color:#3b9bb9;
     letter-spacing:0.5px;
 }
-.form-inner-sections {
+.form-inner-sections 
+{
     width: 100%;
     float: left;
-    margin-top: 20px;
+    margin-top:5px;
+}
+select.setected-time-zone 
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    color: #999;
+    margin: 0;
+}
+select.setected-time-zone:focus
+{
+    outline:none!important;
+}
+.selected-timezone 
+{
+    width: 100%;
+    float: left;
+    position: relative;
 }
 .notify-form-outers {
     width: 100%;
@@ -1284,6 +1316,16 @@ span.card-logos
     margin:0;
     text-align: left;
     padding-left:6px;
+}
+.deadline-text-zone
+{
+    width:100%;
+    float: left;
+    font-size:13px;
+    color:#666;
+    line-height:18px;
+    margin:0;
+    text-align: left;
 }
 .date-starts-time
 {
