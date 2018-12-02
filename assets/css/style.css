@@ -2925,10 +2925,11 @@ span.users-pp
     .onl-sub-inners-sec{padding:20px!important;}
     .only-sub-inners-right-sections{width:100%!important;float:left!important;}
     .only-sub-inners-right-sections{padding:0!important;}
-    .only-sub-form-sec{padding:20px!important;width:80%!important;}
+    .only-sub-form-sec{padding:10px!important;width:95%!important;}
     .card-outer-work-hire-onlines{padding:0!important;}
+    .submit-buttin-sections{margin:20px 0 0 0!important;}
     .onl-sub-inners-left-section{display:none!important;}
-    .dash-cont-mobile-view {display:block;padding:30px 40px;}
+    .dash-cont-mobile-view {display:block;padding:30px 15px;}
     .header-sections{padding:20px 20px!important;}
     .lg-sub-inners-left-sec{width:100%!important;border:none!important;}
     .lg-sub-inners-right-sec{width:100%!important;}
@@ -2941,6 +2942,9 @@ span.users-pp
     .only-footer-sub-inners-sec{padding:0!important;}
     a.at-s{height:30px!important;width:30px!important;}
     .card-outer-work-hire-onlines{padding:0!important;}
+    .notify-form-outers{height:400px!important;overflow-y: scroll;}
+    
+    
 } 
 @media screen and (min-width:768px) and (max-width:997px)
 {
@@ -2987,12 +2991,15 @@ span.users-pp
     span.world-abouts,.world-abouts-orders,span.world-abouts{font-size:18px!important;line-height:26px!important;}
     .inner-test ul li,.card-online-list ul li,.work-headers-works,.lead-tstmnl-comment{font-size:13px!important;line-height:20px!important;}
     span.card-assignment-online,.card-outer .card-sp,span.lead-tstmnl-comment-sec{font-size:14px!important;line-height:24px!important;}
-    .header-content-sections{font-size:22px!important;line-height:32px!important;}
+    .header-content-sections{font-size:18px!important;line-height:30px!important;}
     .lg-sg-form-se{padding:0 20px!important;}
     .lg-sub-inners{padding: 20px 10px 20px 10px!important;}
     .lg-contents-sc{padding-top:30px!important;}
     .lead-testimonial-cont{padding:20px!important;}
     .form-sections-login{padding:0 20px!important;}
+    span.on-sub-headers{margin:0!important;}
+    span.thumb-sc{display:none!important;}
+    .card-outer,.card-outer-work,.card-outer-work-hire{padding: 0 0px 30px!important;}
   
 }
 @media screen and (max-width:520px)
